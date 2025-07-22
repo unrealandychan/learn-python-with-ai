@@ -1,5 +1,7 @@
 # Python Tutorial by AI
 
+![Banner](public/banner.png)
+
 Welcome to this interactive Python tutorial! This course is designed to take you from a complete beginner to a proficient Python developer, equipped with modern tools and best practices.
 
 ## How It Works
