@@ -6,7 +6,7 @@ Welcome to this interactive Python tutorial! This course is designed to take you
 
 ## How It Works
 
-The tutorial is divided into 52 lessons, each covering a specific topic. Each lesson has its own directory containing two files:
+The tutorial is divided into 53 lessons, each covering a specific topic. Each lesson has its own directory containing two files:
 
 *   `instructions.md`: A Markdown file with the lesson's content, explanations, and examples.
 *   `exercise.py` (or `main.py` for FastAPI): A Python file with practice exercises for you to complete.
@@ -85,5 +85,6 @@ The tutorial is divided into 52 lessons, each covering a specific topic. Each le
 *   **Lesson 50: UV Dependency Management:** Modern Dependency & Environment Management with `uv`
 *   **Lesson 51: Databases:** Working with Databases (`SQLAlchemy` with `SQLite`)
 *   **Lesson 52: Config Management:** Configuration Management (using `.env` files)
+*   **Lesson 53: Python for MCP and Skills:** Build a mini MCP-style tool router and reusable skills in Python
 
 Happy learning!
