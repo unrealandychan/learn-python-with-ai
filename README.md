@@ -13,16 +13,128 @@ The tutorial is divided into 53 lessons, each covering a specific topic. Each le
 *   `instructions.md`: A Markdown file with the lesson's content, explanations, and examples.
 *   `exercise.py` (or `main.py` for FastAPI): A Python file with practice exercises for you to complete.
 
+---
+
+## 🚀 Environment Setup (Start Here if You're Brand New!)
+
+Before you can run any Python code, you need to set up your development environment. Follow these steps based on your operating system.
+
+### Step 1 — Install Python
+
+> **Recommended:** Install Python **3.11 or higher**.
+
+#### Windows
+1. Go to [https://www.python.org/downloads/](https://www.python.org/downloads/) and download the latest Python installer.
+2. Run the installer. **Important:** Tick the checkbox **"Add Python to PATH"** before clicking Install.
+3. Open **Command Prompt** (search "cmd" in the Start menu) and verify:
+   ```bash
+   python --version
+   ```
+
+#### macOS
+1. Open **Terminal** (search "Terminal" in Spotlight with `Cmd + Space`).
+2. The easiest way is via [Homebrew](https://brew.sh/). If you don't have Homebrew, install it first:
+   ```bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+3. Then install Python:
+   ```bash
+   brew install python
+   ```
+4. Verify the installation:
+   ```bash
+   python3 --version
+   ```
+
+#### Linux (Ubuntu / Debian)
+1. Open your **Terminal**.
+2. Run:
+   ```bash
+   sudo apt update && sudo apt install python3 python3-pip -y
+   ```
+3. Verify:
+   ```bash
+   python3 --version
+   ```
+
+---
+
+### Step 2 — Install a Code Editor
+
+A good code editor makes writing Python much easier. We strongly recommend **Visual Studio Code (VS Code)**:
+
+1. Download VS Code from [https://code.visualstudio.com/](https://code.visualstudio.com/).
+2. Install the **Python extension** by Microsoft (search "Python" in the Extensions panel on the left sidebar).
+3. Install the **Pylance** extension for better code intelligence and autocompletion.
+
+> **Tip:** Once VS Code is open, press `Ctrl+` `` ` `` (Windows/Linux) or `Cmd+` `` ` `` (macOS) to open the built-in terminal — you can run all your Python commands from there without leaving the editor.
+
+---
+
+### Step 3 — Get This Course
+
+**Option A — Download as a ZIP (easiest for beginners):**
+1. Click the green **Code** button at the top of this GitHub page.
+2. Select **Download ZIP**, then unzip the folder to a location of your choice.
+3. Open VS Code, go to **File → Open Folder**, and select the unzipped folder.
+
+**Option B — Clone with Git (recommended if you know Git):**
+```bash
+git clone https://github.com/unrealandychan/learn-python-with-ai.git
+cd learn-python-with-ai
+```
+
+---
+
+### Step 4 — (Optional but Recommended) Install `uv` for Dependency Management
+
+`uv` is a blazing-fast Python package manager used in Lesson 50. Installing it early lets you easily install third-party packages used in later lessons.
+
+```bash
+# macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Windows (PowerShell)
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+After installing, create a virtual environment in the course folder:
+```bash
+uv venv
+```
+Then activate it:
+```bash
+# macOS / Linux
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+```
+
+---
+
 ## Getting Started
 
-1.  **Navigate to a lesson directory:** Start with `lesson_01`.
+1.  **Navigate to a lesson directory:** Start with `lesson_01_intro_to_python`.
 2.  **Read the instructions:** Open the `instructions.md` file to learn about the topic.
-3.  **Complete the exercise:** Open the exercise file and write the code to complete the exercises.
-4.  **Run your code:** To run your exercise file and see the output, use the following command in your terminal, replacing `lesson_01/exercise.py` with the correct file path:
+3.  **Complete the exercise:** Open `exercise.py` and write your code to complete the exercises.
+4.  **Run your code:** In your terminal, run the exercise file using:
 
     ```bash
-    python lesson_01/exercise.py
+    python lesson_01_intro_to_python/exercise.py
     ```
+
+    > On macOS/Linux you may need to use `python3` instead of `python`.
+
+5.  **Check your solution:** If you get stuck, peek at `solution.py` in the same folder — but try the exercise yourself first!
+
+### Tips for Beginners
+
+*   **Don't rush.** Focus on understanding each lesson before moving to the next.
+*   **Type the code by hand** rather than copy-pasting — it builds muscle memory.
+*   **Experiment freely.** Change values in the examples and see what happens. Breaking things is part of learning!
+*   **Use AI as a tutor.** If something is confusing, ask an AI assistant (like GitHub Copilot or ChatGPT) to explain it in simpler terms.
+*   **Read error messages carefully.** Python's error messages tell you exactly what went wrong and on which line — they are your friend, not your enemy.
 
 ## Beginner Lessons
 
@@ -81,18 +193,14 @@ The tutorial is divided into 53 lessons, each covering a specific topic. Each le
 
 ## Professional Development Practices
 
-*   **Lesson 47: Git and GitHub:** Version Control with Git & GitHub
-*   **Lesson 48: Pytest:** Testing with `pytest`
-*   **Lesson 49: Ruff:** Code Formatting & Linting with `ruff`
-*   **Lesson 50: UV Dependency Management:** Modern Dependency & Environment Management with `uv`
-*   **Lesson 51: Databases:** Working with Databases (`SQLAlchemy` with `SQLite`)
-*   **Lesson 52: Config Management:** Configuration Management (using `.env` files)
-*   **Lesson 53: Python for MCP and Skills:** Build a mini MCP-style tool router and reusable skills in Python
 *   **Lesson 47: Git and GitHub** — Track changes and collaborate using Git & GitHub.
 *   **Lesson 48: Pytest** — Write and run automated tests with `pytest`.
 *   **Lesson 49: Ruff** — Keep code clean with fast formatting and linting via `ruff`.
 *   **Lesson 50: UV Dependency Management** — Manage virtual environments and dependencies with `uv`.
 *   **Lesson 51: Databases** — Store and query data with `SQLAlchemy` and `SQLite`.
 *   **Lesson 52: Config Management** — Manage secrets and settings safely using `.env` files.
+*   **Lesson 53: Python for MCP and Skills** — Build a mini MCP-style tool router and reusable skills in Python.
 
-Happy learning!
+---
+
+Happy learning! 🎉
