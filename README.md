@@ -1,3 +1,16 @@
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,30,2&height=160&section=header&text=learn--python--with--ai&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=Self-paced+Python+course+%E2%80%94+all+content+AI-generated&descAlignY=58&descSize=14" alt="Header"/>
+
+[![Stars](https://img.shields.io/github/stars/unrealandychan/learn-python-with-ai?style=for-the-badge&logo=github&color=f78166&logoColor=white&labelColor=0d1117)](https://github.com/unrealandychan/learn-python-with-ai/stargazers)
+[![Forks](https://img.shields.io/github/forks/unrealandychan/learn-python-with-ai?style=for-the-badge&logo=github&color=79c0ff&logoColor=white&labelColor=0d1117)](https://github.com/unrealandychan/learn-python-with-ai/network/members)
+[![Language](https://img.shields.io/badge/Python-3776AB?logo=python&style=for-the-badge&logoColor=white&labelColor=0d1117)](https://github.com/unrealandychan/learn-python-with-ai)
+[![Stars](https://img.shields.io/github/stars/unrealandychan/learn-python-with-ai?style=for-the-badge&logo=github&color=f78166&labelColor=0d1117)](https://github.com/unrealandychan/learn-python-with-ai/stargazers)
+
+</div>
+
+---
+
 # Python Tutorial by AI
 
 [中文版](README_zh.md)
