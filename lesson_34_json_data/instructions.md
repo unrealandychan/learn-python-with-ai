@@ -1,5 +1,46 @@
 
-# Lesson 34: Working with JSON data (`json` module)
+# Lesson 34: Working with JSON Data — The Language of AI APIs
+
+**JSON is the universal format for AI API communication.** Every time you call OpenAI, Anthropic, Cohere, or any other AI API, you send and receive JSON. Every LLM response is a JSON object. Every function call result is JSON.
+
+Mastering Python's `json` module is essential for working with AI systems.
+
+## JSON in AI Contexts
+
+Here's what a real OpenAI API response looks like as a Python dict:
+
+```python
+api_response = {
+    "id": "chatcmpl-abc123",
+    "object": "chat.completion",
+    "model": "gpt-4o-mini",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "Python is a high-level programming language."
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 12,
+        "completion_tokens": 9,
+        "total_tokens": 21
+    }
+}
+
+# Extract just the text:
+text = api_response["choices"][0]["message"]["content"]
+tokens_used = api_response["usage"]["total_tokens"]
+```
+
+Understanding JSON means you can navigate any API response with confidence.
+
+---
+
+# Original Lesson: Working with JSON data (`json` module)
 
 JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is commonly used for transmitting data in web applications (e.g., sending data from a server to a web page).
 

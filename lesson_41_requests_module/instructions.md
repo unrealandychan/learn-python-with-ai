@@ -1,4 +1,45 @@
-# Lesson 41: `requests` - Making HTTP Requests
+# Lesson 41: `requests` — Making HTTP Requests & Calling AI APIs
+
+The `requests` library is your bridge to the internet from Python. More importantly for us: **every AI API is a REST API**, and `requests` is how you call them.
+
+## Calling the OpenAI API with `requests` (Raw HTTP)
+
+Before using the OpenAI SDK, it's valuable to understand the raw HTTP call it makes:
+
+```python
+import requests
+import json
+import os
+
+# Never hardcode API keys — use environment variables
+api_key = os.getenv("OPENAI_API_KEY")
+
+response = requests.post(
+    "https://api.openai.com/v1/chat/completions",
+    headers={
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    },
+    json={
+        "model": "gpt-4o-mini",
+        "messages": [
+            {"role": "user", "content": "What is Python?"}
+        ]
+    }
+)
+
+if response.status_code == 200:
+    data = response.json()
+    print(data["choices"][0]["message"]["content"])
+else:
+    print(f"Error {response.status_code}: {response.text}")
+```
+
+This is exactly what the OpenAI SDK does under the hood — understanding raw HTTP makes you a better developer.
+
+---
+
+# Original Lesson: `requests` - Making HTTP Requests
 
 The `requests` library is the de facto standard for making HTTP requests in Python. It simplifies the process of sending HTTP requests and handling responses, making web interactions much easier than using Python's built-in `urllib` module.
 
