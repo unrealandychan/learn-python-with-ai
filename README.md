@@ -14,7 +14,7 @@
 
 # 🤖 The Only Python Course You Need in the AI Era
 
-[中文版](README_zh.md) | [Quick Start](#-quick-start) | [Curriculum](#-curriculum) | [Tech Stack](#-tech-stack)
+[中文版](README_zh.md) | [Español](README_es.md) | [Quick Start](#-quick-start) | [Curriculum](#-curriculum) | [Tech Stack](#-tech-stack)
 
 ![Banner](public/banner.png)
 

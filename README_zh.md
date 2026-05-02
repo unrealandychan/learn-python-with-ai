@@ -1,6 +1,6 @@
 # AI Python 教程
 
-[English Version](README.md)
+[English Version](README.md) | [Español](README_es.md)
 
 ![Banner](public/banner.png)
 
