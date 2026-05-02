@@ -39,7 +39,7 @@ Al final, no solo sabrás Python — podrás construir aplicaciones de IA que re
 
 ## ✨ Características Destacadas
 
-| | |
+| Característica | Descripción |
 |---|---|
 | 🎓 **60 Lecciones** | Desde "Hola Mundo" hasta aplicaciones de IA en producción |
 | 🤖 **IA como eje central** | Cada ejercicio usa contexto de IA y patrones del mundo real |
