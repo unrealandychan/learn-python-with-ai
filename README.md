@@ -5,7 +5,7 @@
 [![Stars](https://img.shields.io/github/stars/unrealandychan/learn-python-with-ai?style=for-the-badge&logo=github&color=f78166&logoColor=white&labelColor=0d1117)](https://github.com/unrealandychan/learn-python-with-ai/stargazers)
 [![Forks](https://img.shields.io/github/forks/unrealandychan/learn-python-with-ai?style=for-the-badge&logo=github&color=79c0ff&logoColor=white&labelColor=0d1117)](https://github.com/unrealandychan/learn-python-with-ai/network/members)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&style=for-the-badge&logoColor=white&labelColor=0d1117)](https://python.org)
-[![60 Lessons](https://img.shields.io/badge/60_Lessons-AI--First-blueviolet?style=for-the-badge&labelColor=0d1117)](.)
+[![75 Lessons](https://img.shields.io/badge/75_Lessons-AI--First-blueviolet?style=for-the-badge&labelColor=0d1117)](.)
 [![License](https://img.shields.io/github/license/unrealandychan/learn-python-with-ai?style=for-the-badge&labelColor=0d1117)](LICENSE)
 
 </div>
@@ -18,7 +18,7 @@
 
 ![Banner](public/banner.png)
 
-> **60 lessons. Zero prerequisites. One goal: make you a Python developer who builds real AI applications.**
+> **75 lessons. Zero prerequisites. One goal: make you a Python developer who builds real AI applications.**
 
 ---
 
@@ -41,7 +41,7 @@ By the end, you won't just know Python — you'll be able to build AI applicatio
 
 | | |
 |---|---|
-| 🎓 **60 Lessons** | From "Hello World" to production AI apps |
+| 🎓 **75 Lessons** | From "Hello World" to production AI apps |
 | 🤖 **AI-First** | Every exercise uses AI context and real-world patterns |
 | 🔨 **Project-Based** | Build real things: chatbots, agents, APIs, data pipelines |
 | 📦 **Modern Stack** | OpenAI SDK, LangChain, FastAPI, Pandas, NumPy |
@@ -90,7 +90,7 @@ pip install -r requirements.txt
 
 ```bash
 # Start with lesson 1
-cd lesson_01_intro_to_python
+cd module_01_python_foundations/lesson_01_intro_to_python
 python exercise.py
 ```
 
@@ -107,17 +107,21 @@ echo "OPENAI_API_KEY=sk-your-key-here" > .env
 
 ## 📚 Curriculum
 
-### 🟢 Module 1: Python Foundations (Lessons 1–20)
-*Core Python with an AI context — understand every concept in terms of how it's used in AI development.*
+> 75 lessons organised into 6 modules. Each lesson has `instructions.md`, `exercise.py`, and `solution.py`.
+
+---
+
+### 🟢 Module 1 — Python Foundations (`module_01_python_foundations`)
+*Core Python — every concept taught through the lens of AI development.*
 
 | Lesson | Topic | AI Application |
 |--------|-------|----------------|
 | 01 | Intro to Python | Why Python dominates AI |
-| 02 | Variables & Data Types | Storing LLM responses in variables |
+| 02 | Variables & Data Types | Storing LLM responses |
 | 03 | Basic Operators | Processing API response scores |
 | 04 | User Input & Type Casting | Building interactive AI tools |
-| 05 | Conditional Statements | Routing based on AI classification results |
-| 06 | Lists | Storing multiple AI-generated items |
+| 05 | Conditional Statements | Routing based on AI classification |
+| 06 | Lists | Storing AI-generated items |
 | 07 | List Methods | Managing conversation message arrays |
 | 08 | For Loops | Iterating over batch AI results |
 | 09 | While Loops | Retry logic for API calls |
@@ -130,19 +134,34 @@ echo "OPENAI_API_KEY=sk-your-key-here" > .env
 | 16 | File I/O: Reading | Loading prompts and knowledge bases |
 | 17 | File I/O: Writing | Saving AI outputs to disk |
 | 18 | Error Handling | Robust API call error handling |
-| 19 | OOP Intro | Modeling AI conversations as objects |
-| 20 | Next Steps | Mini project: command-line AI assistant |
 
-### 🟡 Module 2: Advanced Python (Lessons 21–40)
+---
+
+### 🔵 Module 2 — Object-Oriented Programming (`module_02_oop`)
+*Foundations to advanced OOP — 4 pillars, design patterns, ABCs, and modern Python OOP.*
+
+| Lesson | Topic | Key Concept |
+|--------|-------|-------------|
+| 19 | OOP Intro | Classes, objects, `__init__`, `self` |
+| 20 | Next Steps | Mini project: CLI AI assistant |
+| 21 | Inheritance | `super()`, parent/child classes |
+| 22 | Polymorphism | Method overriding, duck typing |
+| 23 | Encapsulation | Public / `_protected` / `__private` |
+| 24 | Dunder Methods | `__str__`, `__repr__`, `__len__`, `__add__` |
+| 25 | Static & Class Methods | `@staticmethod`, `@classmethod` |
+| 61 | **Abstract Classes & ABCs** | `abc.ABC`, `@abstractmethod`, LLM Provider pattern |
+| 62 | **Multiple Inheritance & MRO** | C3 linearization, diamond problem, Mixins |
+| 63 | **@property** | Getters, setters, computed attributes |
+| 64 | **Design Patterns** | Singleton, Factory, Observer, Strategy |
+| 65 | **Dataclasses** | `@dataclass`, `frozen`, `field`, `__post_init__` |
+
+---
+
+### 🟡 Module 3 — Advanced Python (`module_03_advanced_python`)
 *Advanced patterns that every AI engineer uses daily.*
 
 | Lesson | Topic | AI Application |
 |--------|-------|----------------|
-| 21 | OOP Inheritance | Specialized AI model clients |
-| 22 | OOP Polymorphism | Interchangeable AI providers |
-| 23 | OOP Encapsulation | Protecting API keys in classes |
-| 24 | OOP Dunder Methods | Custom AI response objects |
-| 25 | Static & Class Methods | Shared configuration across AI clients |
 | 26 | List Comprehensions | Transforming batches of AI outputs |
 | 27 | Dict & Set Comprehensions | Aggregating AI result metrics |
 | 28 | Lambda Functions | Inline transformation of AI data |
@@ -159,7 +178,27 @@ echo "OPENAI_API_KEY=sk-your-key-here" > .env
 | 39 | Async/Await | Async LLM calls with streaming |
 | 40 | Advanced Project | Build an async AI pipeline |
 
-### 🔵 Module 3: Essential Libraries (Lessons 41–53)
+---
+
+### 🔴 Module 4 — Data Structures & Algorithms (`module_04_data_structures_and_algorithms`)
+*CS fundamentals for coding interviews — Big-O, classic data structures, algorithm patterns.*
+
+| Lesson | Topic | Key Concept |
+|--------|-------|-------------|
+| 66 | **Stack & Queue** | MinStack, BrowserHistory, `collections.deque` |
+| 67 | **Linked List** | Reverse, find middle, remove duplicates |
+| 68 | **Binary Trees & BST** | Traversals, height, is_balanced |
+| 69 | **Heap & Priority Queue** | `heapq`, MedianFinder (two-heap), Top-K |
+| 70 | **Graphs: BFS & DFS** | Adjacency list, shortest path, is_connected |
+| 71 | **Big-O Complexity** | All rules, Python built-in complexities |
+| 72 | **Recursion & DP** | Memoisation, tabulation, Coin Change, LCS |
+| 73 | **Sorting & Binary Search** | Merge Sort, Binary Search, Rotated Array |
+| 74 | **Hash Maps & Sets** | Two-Sum, Group Anagrams, LRU Cache |
+| 75 | **Interview Cheat Sheet** | OOP/DS/algorithms quick reference |
+
+---
+
+### 🟣 Module 5 — Essential Libraries (`module_05_essential_libraries`)
 *The libraries that power real-world Python and AI applications.*
 
 | Lesson | Topic | AI Application |
@@ -178,50 +217,20 @@ echo "OPENAI_API_KEY=sk-your-key-here" > .env
 | 52 | Config Management | Secure API key management with .env |
 | 53 | Python for MCP & Skills | Building tool-calling infrastructure |
 
-### 🔴 Module 4: AI & LLM Integration (Lessons 54–60)
+---
+
+### 🟠 Module 6 — AI & LLM Integration (`module_06_ai_and_llm`)
 *The cutting edge — calling, prompt-engineering, and building with LLMs.*
 
-| Lesson | Topic | AI Application |
-|--------|-------|----------------|
-| 54 | **OpenAI SDK** | Chat completions, streaming, function calling, JSON mode |
-| 55 | **Prompt Engineering** | Few-shot prompting, CoT, output formatting, templates |
-| 56 | **LangChain Basics** | LCEL chains, memory, output parsers, RAG pattern |
-| 57 | **NumPy for AI** | Vector math, cosine similarity, softmax, embeddings |
-| 58 | **AI Agents** | ReAct pattern, tool registries, the agent loop |
-| 59 | **Vector Embeddings** | Semantic search, simple vector DB, chunking |
-| 60 | **Capstone Project** | Build a complete AI application from scratch |
-
----
-
-## 🛠 Tech Stack
-
-This course uses the modern Python AI ecosystem:
-
-| Category | Libraries |
-|----------|-----------|
-| **LLM APIs** | `openai`, `langchain`, `langchain-openai` |
-| **Data Science** | `numpy`, `pandas`, `matplotlib`, `seaborn` |
-| **Web / APIs** | `fastapi`, `httpx`, `requests`, `uvicorn` |
-| **Config** | `python-dotenv` |
-| **Dev Tools** | `pytest`, `ruff`, `uv` |
-| **Databases** | `sqlalchemy` |
-| **Scraping** | `beautifulsoup4` |
-
----
-
-## 📋 Prerequisites
-
-**None.** This course starts from absolute zero.
-
-You need:
-- A computer (Windows, macOS, or Linux)
-- Internet connection
-- Curiosity and willingness to learn
-
-You do NOT need:
-- Prior programming experience
-- Math background
-- An OpenAI API key (all exercises work with mock clients)
+| Lesson | Topic | Key Concept |
+|--------|-------|-------------|
+| 54 | OpenAI SDK | Chat completions, streaming, function calling |
+| 55 | Prompt Engineering | Few-shot, CoT, output formatting, templates |
+| 56 | LangChain Basics | LCEL, memory, RAG chains |
+| 57 | NumPy | Vectors, cosine similarity, softmax |
+| 58 | AI Agents | ReAct pattern, tool registries |
+| 59 | Vector Embeddings | Semantic search, vector databases |
+| 60 | AI Capstone | Full end-to-end AI application |
 
 ---
 
@@ -230,7 +239,7 @@ You do NOT need:
 Every lesson follows the same structure:
 
 ```
-lesson_XX_topic_name/
+module_XX_name/lesson_XX_topic_name/
 ├── instructions.md    ← Read this first: theory, examples, concepts
 ├── exercise.py        ← Your playground: complete the TODO exercises
 └── solution.py        ← Check your work after trying yourself
@@ -257,10 +266,12 @@ lesson_XX_topic_name/
 ## 🗺 Learning Path
 
 ```
-Weeks 1-4:   Lessons 01-20  → Python Foundations
-Weeks 5-8:   Lessons 21-40  → Advanced Python
-Weeks 9-12:  Lessons 41-53  → Essential Libraries  
-Weeks 13-15: Lessons 54-60  → AI & LLM Integration
+Weeks 1-4:   Module 1 (Lessons 01-18) → Python Foundations
+Weeks 5-8:   Module 2 (Lessons 19-25, 61-65) → OOP
+Weeks 9-10:  Module 3 (Lessons 26-40) → Advanced Python
+Weeks 11-12: Module 4 (Lessons 66-75) → Data Structures & Algorithms
+Weeks 13-14: Module 5 (Lessons 41-53) → Essential Libraries
+Weeks 15-16: Module 6 (Lessons 54-60) → AI & LLM Integration
 ```
 
 > At ~4 lessons/week, you'll complete the course in ~15 weeks. Take your time — depth over speed.
